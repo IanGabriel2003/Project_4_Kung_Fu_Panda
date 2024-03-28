@@ -1,0 +1,27 @@
+@use 'variaveis';
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: variaveis.$CorPrincipal;
+
+    &_logo {
+        max-width: 125px;
+    }
+    
+    &_container {
+        padding: 8px 36px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &_links {
+        display: flex;
+        align-items: center;
+        
+        &_item {
+            margin: 5px;
+        }
+    }
+}

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 4</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/css/style.css">
+    
+</head>
+<body>
+    <header class="header">
+        <div class="header_container">
+            <h1>
+                <img class="header_logo" src="./dist/images/KungFuPanda_Logo.png" alt="Kung Fu Panda Logo">
+            </h1>
+            <ul class="header_links">
+                <li class="header_links_item FontJost">
+                    <a class="button" href="#welcome">
+                        Bem-vindo
+                    </a>
+                </li>
+                <li class="header_links_item FontJost">
+                    <a class="button" href="#shows">
+                        Filmes
+                    </a>
+                </li>
+                <li class="header_links_item FontJost">
+                    <a class="button" href="#voice-actors">
+                        Dubladores
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section id="welcome" class="welcome">
+        <div class="welcome_img">
+            <img src="./dist/images/KungFuPanda_Wallpaper.jpg" alt="Kung Fu Panda Wallpaper">
+        </div>
+            <div class="welcome_text">
+                <p class="FontJost">
+                    A saga "Kung Fu Panda" segue a jornada de Po, um panda desajeitado que sonha em se tornar um mestre de kung fu. Ao longo dos três filmes, Po enfrenta diversos desafios, descobre mais sobre suas origens e aprende valiosas lições sobre coragem, amizade e autodescoberta.
+                    Ao longo de toda a saga, Po e seus amigos, os Cinco Furiosos, enfrentam desafios incríveis, mas sempre emergem mais fortes e unidos. A saga "Kung Fu Panda" é elogiada por sua combinação de humor, ação e mensagens inspiradoras, cativando públicos de todas as idades ao redor do mundo.
+                </p>
+            </div>
+    </section>
+    <section id="shows" class="shows">
+        <nav class="shows_tab">
+            <button data-tab-button="KungFuPanda1" class="shows_tabs_button shows_tabs_button--is-active">
+                Kung Fu Panda 1
+            </button>
+            <button data-tab-button="KungFuPanda2" class="shows_tabs_button">
+                Kung Fu Panda 2
+            </button>
+            <button data-tab-button="KungFuPanda3" class="shows_tabs_button">
+                Kung Fu Panda 3
+            </button>
+            <button data-tab-button="KungFuPanda4" class="shows_tabs_button">
+                Kung Fu Panda 4
+            </button>
+        </nav>
+        <ul data-tab-id="KungFuPanda1" class="shows_list shows_list--is-active">
+            <li class="shows_list_item">
+                <img src="./dist/images/KungFuPandaL1.png" alt="KungFuPandaLogo1">
+                <p class="FontJost">
+                    Po é um panda que trabalha na loja de macarrão da sua família e sonha em transformar-se em um mestre de kung fu. Seu sonho se torna realidade quando, inesperadamente, ele deve cumprir uma profecia antiga e estudar a arte marcial com seus ídolos, os Cinco Furiosos. Po precisa de toda a sabedoria, força e habilidade que conseguir reunir para proteger seu povo de um leopardo da neve malvado.
+                </p>
+                <video controls src="./dist/videos/Kung Fu Panda _ Official Trailer.mp4"></video>
+            </li>
+        </ul>
+        <ul data-tab-id="KungFuPanda2" class="shows_list">
+            <li class="shows_list_item">
+                <div>
+                    <img src="./dist/images/KungFuPandaL2.png" alt="KungFuPandaLogo2">
+                    <p class="FontJost">
+                        Um vilão planeja usar uma arma secreta para conquistar a China e eliminar as artes marciais. Para evitar que isso aconteça, Po precisa descobrir a misteriosa origem do novo inimigo e reunir as forças necessárias para vencê-lo.
+                    </p>
+                    <video controls src="./src/videos/Kung Fu Panda 2 _ Official Trailer.mp4"></video>
+                </div>
+            </li>
+        </ul>
+        <ul data-tab-id="KungFuPanda3" class="shows_list">
+            <li class="shows_list_item">
+                <div>
+                    <img src="./dist/images/KungFuPandaL3.png" alt="KungFuPandaLogo3">
+                    <p class="FontJost">
+                        Depois de reencontrar o pai, Po precisa treinar os moradores de um vilarejo repleto de pandas atrapalhados e ajudá-los a derrotar um perigoso e malvado vilão.
+                    </p>
+                    <video controls src="./src/videos/Kung Fu Panda 3 _ Segundo Trailer Oficial _ Dublado HD.mp4"></video>
+                </div>
+            </li>
+        </ul>
+        <ul data-tab-id="KungFuPanda4" class="shows_list">
+            <li class="shows_list_item">
+                <div>
+                    <img src="./dist/images/KungFuPandaL4.png" alt="KungFuPandaLogo4">
+                    <p class="FontJost">
+                        Depois de três aventuras arriscando sua própria vida para derrotar os mais poderosos vilões, Po, o Grande Dragão Guerreiro( Jack Black) é escolhido para se tornar o Líder Espiritual do Vale da Paz. A escolha em si já problemática ao colocar o mestre de kung fu mais improvável do mundo em um cargo como esse e além disso, ele precisa encontrar e treinar um novo Dragão Guerreiro antes de assumir a honrada posição e a pessoa certa parece ser Zhen (Awkwafina) uma raposa com muitas habilidades, mas que não gosta muito da ideia de ser treinada. Como se os desafios já não fossem o bastante, a Camaleoa (Viola Davis), uma feiticeira perversa, tenta trazer de volta todos os vilões derrotados por Po do reino espiritual.
+                    </p>
+                    <video controls src="./src/videos/Kung Fu Panda 4 _ Trailer Oficial Dublado (Universal Pictures) - HD.mp4"></video>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section id="voice-actors" class="voice-actors">
+        <h1 class="dub-title FontJost">Dubladores</h1>
+        <div class="voice-actors_cont">
+            <ul class="voice-actors_cont_1">
+                <!-- Panda -->
+                <li class="voice-actors_personagens">
+                    <img src="./dist/images/Dub/Dub_0.webp" alt="dubPanda">
+                    <p class="FontJost">Po</p>
+                    <p class="FontJost">-</p>
+                    <p class="FontJost">Jack Black</p>
+                    <img src="./dist/images/Dub/Dub_00.webp" alt="dubJack">
+                </li>
+                <!-- Tai Lung -->
+                <li class="voice-actors_personagens">
+                    <img src="./dist/images/Dub/Dub_1.webp" alt="dubTaiLung">
+                    <p class="FontJost">Tai Lung</p>
+                    <p class="FontJost">-</p>
+                    <p class="FontJost">Ian McShane</p>
+                    <img src="./dist/images/Dub/Dub_11.jpg" alt="dubIan">
+                </li>
+                <!-- Lord Shen -->
+                <li class="voice-actors_personagens">
+                    <img src="./dist/images/Dub/Dub_2.webp" alt="dubLord Shen">
+                    <p class="FontJost">Lorde Shen</p>
+                    <p class="FontJost">-</p>
+                    <p class="FontJost">Gary Oldman</p>
+                    <img src="./dist/images/Dub/Dub_22.webp" alt="dubGary Oldman">
+                </li>
+                <!-- Kai -->
+                <li class="voice-actors_personagens">
+                    <img src="./dist/images/Dub/Dub_3.webp" alt="dubKai">
+                    <p class="FontJost">Kai</p>
+                    <p class="FontJost">-</p>
+                    <p class="FontJost">J.K. Simmons</p>
+                    <img src="./dist/images/Dub/Dub_33.webp" alt="dubJ.K. Simmons">
+                </li>
+                <!-- Mestre Shifu -->
+                <li class="voice-actors_personagens">
+                    <img src="./dist/images/Dub/Dub_4.webp" alt="dubMestre Shifu">
+                    <p class="FontJost">Mestre Shifu</p>
+                    <p class="FontJost">-</p>
+                    <p class="FontJost">Dustin Hoffman</p>
+                    <img src="./dist/images/Dub/Dub_44.webp" alt="dubDustin Hoffman">
+                </li>
+                <!-- Oogway -->
+                <li class="voice-actors_personagens">
+                    <img src="./dist/images/Dub/Dub_5.webp" alt="dubOogway">
+                    <p class="FontJost">Oogway</p>
+                    <p class="FontJost">-</p>
+                    <p class="FontJost">Randall Duk Kim</p>
+                    <img src="./dist/images/Dub/Dub_55.jpg" alt="dubRandall Duk Kim">
+                </li>
+                <!-- Sr. Ping -->
+                <li class="voice-actors_personagens">
+                    <img src="./dist/images/Dub/Dub_6.webp" alt="dubSr. Ping">
+                    <p class="FontJost">Sr. Ping</p>
+                    <p class="FontJost">-</p>
+                    <p class="FontJost">James Hong</p>
+                    <img src="./dist/images/Dub/Dub_66.webp" alt="dubJames Hong">
+                </li>
+                <!-- Li Shan -->
+                <li class="voice-actors_personagens">
+                    <img src="./dist/images/Dub/Dub_7.webp" alt="dubLi Shan">
+                    <p class="FontJost">Li Shan</p>
+                    <p class="FontJost">-</p>
+                    <p class="FontJost">Bryan Cranston</p>
+                    <img src="./dist/images/Dub/Dub_77.webp" alt="dubBryan Cranston">
+                </li>
+                <!-- Tigresa -->
+                <li class="voice-actors_personagens">
+                    <img src="./dist/images/Dub/Dub_8.webp" alt="dubTigresa">
+                    <p class="FontJost">Tigresa</p>
+                    <p class="FontJost">-</p>
+                    <p class="FontJost">Angelina Jolie</p>
+                    <img src="./dist/images/Dub/Dub_88.webp" alt="dubAngelina Jolie">
+                </li>
+                <!-- Víbora -->
+                <li class="voice-actors_personagens">
+                    <img src="./dist/images/Dub/Dub_9.webp" alt="dubVíbora">
+                    <p class="FontJost">Víbora</p>
+                    <p class="FontJost">-</p>
+                    <p class="FontJost">Lucy Liu</p>
+                    <img src="./dist/images/Dub/Dub_99.webp" alt="dubLucy Liu">
+                </li>
+                <!-- Macaco -->
+                <li class="voice-actors_personagens">
+                    <img src="./dist/images/Dub/Dub_A.webp" alt="dubMacaco">
+                    <p class="FontJost">Macaco</p>
+                    <p class="FontJost">-</p>
+                    <p class="FontJost">Jackie Chan</p>
+                    <img src="./dist/images/Dub/Dub_AA.png" alt="dubJackie Chan">
+                </li>
+                <!-- Garça -->
+                <li class="voice-actors_personagens">
+                    <img src="./dist/images/Dub/Dub_B.webp" alt="dubGarça">
+                    <p class="FontJost">Garça</p>
+                    <p class="FontJost">-</p>
+                    <p class="FontJost">David Cross</p>
+                    <img src="./dist/images/Dub/Dub_BB.webp" alt="dubDavid Cross">
+                </li>
+                <!-- Louva-Deus -->
+                <li class="voice-actors_personagens">
+                    <img src="./dist/images/Dub/Dub_C.webp" alt="dubLouva-Deus">
+                    <p class="FontJost">Louva-Deus</p>
+                    <p class="FontJost">-</p>
+                    <p class="FontJost">Seth Rogen</p>
+                    <img src="./dist/images/Dub/Dub_CC.webp" alt="dubSeth Rogen">
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer class="footer FontJost">@Todos os direitos reservados - Ian Gabriel Pereira De Queiroz</footer>
+    <script src="./dist/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+@use 'variaveis';
+
+.welcome {
+
+    &_img {
+        max-width: 1400px;
+        display: block;
+        margin: 0 auto;
+
+        img {
+            width: 1400px;
+            margin: 8px 0px;
+            border-radius: 24px;
+        }
+    }
+
+    &_text {
+        background-color: variaveis.$CorPrincipal;
+        border-radius: 36px;
+        padding: 96px;
+        margin: 8px 500px;
+
+        p {
+            color: white;
+        }
+    }
+}

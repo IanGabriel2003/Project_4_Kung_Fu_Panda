@@ -1,0 +1,6 @@
+@use 'variaveis';
+
+.footer {
+    text-align: center;
+    background-color: variaveis.$CorPrincipal;
+}
