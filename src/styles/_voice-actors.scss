@@ -24,7 +24,10 @@
     }
 
     li {
-        padding: 12px 32px;
+        background-color: variaveis.$CorDeFundo;
+        border-radius: 16px;
+        margin: 4px;
+        padding: 10px 30px;
     }
 
 
@@ -47,9 +50,20 @@
         }
     }
 
+    &_panda {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: variaveis.$CorDeFundo;
+        border-radius: 16px;
+        margin: 4px;
+        padding: 10px 30px;
+    }
+
     &_personagens {
         display: flex;
         align-items: center;
-        text-align: center;
+        justify-content: space-between;
     }
 }
