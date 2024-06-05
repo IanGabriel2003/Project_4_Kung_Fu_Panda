@@ -60,20 +60,6 @@
         }
     }
 
-    .Kung1 {
-        height: 565px;
-    }
-    .Kung2 {
-        height: 600px;
-    }
-    .Kung3 {
-        height: 600px;
-    }
-    .Kung4 {
-        height: 800px;
-    }
-    
-
     @media (max-width: 640px) {
         &_list {
             &_item {
@@ -92,6 +78,19 @@
 
         &_tab {
             max-width: 512px;
+        }
+
+        .Kung1 {
+            height: 565px;
+        }
+        .Kung2 {
+            height: 600px;
+        }
+        .Kung3 {
+            height: 600px;
+        }
+        .Kung4 {
+            height: 800px;
         }
     }
 }
