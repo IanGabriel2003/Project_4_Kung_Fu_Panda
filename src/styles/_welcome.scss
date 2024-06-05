@@ -7,7 +7,7 @@
         margin: 0 auto;
 
         img {
-            width: 1400px;
+            width: 87.5em;
             margin: 8px 0px;
             border-radius: 24px;
         }
@@ -27,12 +27,15 @@
     @media (max-width: 640px) {
         &_img {
             img {
-                max-width: 640px;
+                max-width: 512px;
             }
         }
 
         &_text {
+            max-width: 512px;
             margin: 0;
+            padding: 12px 64px;
+            
         }
     }
 }

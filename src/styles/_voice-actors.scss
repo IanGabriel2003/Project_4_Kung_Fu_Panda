@@ -73,5 +73,19 @@
             grid-template-columns: 1fr;
             grid-template-rows: 1fr;
         }
+
+        li {
+            padding: 4px 0px;
+            margin: 4px 0px;
+        }
+
+        h1 {
+            max-width: 530px;
+        }
+
+        &_cont {
+            max-width: 512px;
+            padding: 6px 0px;
+        }
     }
 }

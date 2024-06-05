@@ -35,7 +35,12 @@
 
     @media (max-width: 640px) {
         &_container {
-            padding: 8px 25px;
+            max-width: 512px;
+            padding: 12px;
+        }
+
+        .button {
+            padding: 4px;
         }
     }
 }

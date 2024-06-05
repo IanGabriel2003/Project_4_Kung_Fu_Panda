@@ -4,3 +4,9 @@
     text-align: center;
     background-color: variaveis.$CorPrincipal;
 }
+
+@media (max-width: 640px) {
+    .footer {
+        max-width: 512px;
+    }
+}

@@ -77,14 +77,21 @@
     @media (max-width: 640px) {
         &_list {
             &_item {
+                max-width: 512px;
+                margin-right: 128px;
+
                 p {
                     max-width: 75%;
                 }
 
                 video {
-                    max-width: 600px;
+                    max-width: 480px;
                 }
             }
+        }
+
+        &_tab {
+            max-width: 512px;
         }
     }
 }
