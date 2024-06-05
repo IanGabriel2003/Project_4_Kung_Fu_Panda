@@ -59,6 +59,34 @@
             }
         }
     }
+
+    .Kung1 {
+        height: 565px;
+    }
+    .Kung2 {
+        height: 600px;
+    }
+    .Kung3 {
+        height: 600px;
+    }
+    .Kung4 {
+        height: 800px;
+    }
+    
+
+    @media (max-width: 640px) {
+        &_list {
+            &_item {
+                p {
+                    max-width: 75%;
+                }
+
+                video {
+                    max-width: 600px;
+                }
+            }
+        }
+    }
 }
 
 

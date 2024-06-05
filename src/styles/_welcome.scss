@@ -1,7 +1,6 @@
 @use 'variaveis';
 
 .welcome {
-
     &_img {
         max-width: 1400px;
         display: block;
@@ -22,6 +21,18 @@
 
         p {
             color: white;
+        }
+    }
+
+    @media (max-width: 640px) {
+        &_img {
+            img {
+                max-width: 640px;
+            }
+        }
+
+        &_text {
+            margin: 0;
         }
     }
 }

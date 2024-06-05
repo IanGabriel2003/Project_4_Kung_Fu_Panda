@@ -5,16 +5,20 @@
     top: 0;
     left: 0;
     background-color: variaveis.$CorPrincipal;
+    z-index: 1;
 
-    &_logo {
-        max-width: 125px;
-    }
-    
     &_container {
         padding: 8px 36px;
         display: flex;
         justify-content: space-between;
     }
+
+    &_logo {
+        max-width: 125px;
+        width: 100%;
+        margin: 5px;
+    }
+    
 
     &_links {
         display: flex;
@@ -22,6 +26,16 @@
         
         &_item {
             margin: 5px;
+        }
+    }
+
+    .button {
+        height: 5px;
+    }
+
+    @media (max-width: 640px) {
+        &_container {
+            padding: 8px 25px;
         }
     }
 }
