@@ -1,11 +1,10 @@
 @use 'variaveis';
 
 .shows {
-    margin-top: 100px;
+    margin-top: 50px;
     text-align: center;
     
     &_list {
-        margin-top: 44px;
         display: none;
         gap: 24px;
 
@@ -14,12 +13,25 @@
             justify-content: center;
         }
 
+        .Kung1 {
+            height: 900px;
+        }
+        .Kung2 {
+            height: 1000px;
+        }
+        .Kung3 {
+            height: 900px;
+        }
+        .Kung4 {
+            height: 1500px;
+        }
+
         &_item {
                 border-radius: 24px;
                 background-color: variaveis.$CorPrincipal;
-                width: 1624px;
-                height: 1124px;
                 text-align: center;
+                max-width: 1624px;
+                max-height: 1124px;
                 
                 img {
                     margin: 24px 0;
@@ -27,12 +39,15 @@
                 }
                 
                 p {
+                    text-align: center;
+                    max-height: 60%;
                     max-width: 50%;
                     margin: 0 auto;
                     color: white;
                 }
 
                 video {
+                    width: 80%;
                     margin-top: 24px;
                     border-radius: 24px;
                 }
@@ -60,38 +75,42 @@
         }
     }
 
-    @media (max-width: 640px) {
-        &_list {
-            &_item {
-                max-width: 512px;
-                margin-right: 128px;
-
-                p {
-                    max-width: 75%;
-                }
-
-                video {
-                    max-width: 480px;
-                }
-            }
-        }
-
-        &_tab {
-            max-width: 512px;
-        }
-
+    @media (max-width: 768px) {
         .Kung1 {
-            height: 564px;
+            height: 650px;
         }
         .Kung2 {
-            height: 600px;
+            height: 700px;
         }
         .Kung3 {
-            height: 600px;
+            height: 700px;
         }
         .Kung4 {
-            height: 800px;
+            height: 900px;
         }
+    }
+
+    @media (max-width: 480px) {
+        &_list {
+                margin-top: 44px;
+                margin: 0px 20px;
+        }
+        p {
+            max-width: 80%;
+            margin: 0 auto;
+        }
+            .Kung1 {
+                height: 564px;
+            }
+            .Kung2 {
+                height: 500px;
+            }
+            .Kung3 {
+                height: 500px;
+            }
+            .Kung4 {
+                height: 800px;
+            }
     }
 }
 

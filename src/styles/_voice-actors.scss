@@ -45,7 +45,7 @@
         }
 
         p {
-            margin: 28px 16px;
+            margin: 28px 0px;
             color: variaveis.$CorSecundaria;
         }
     }
@@ -67,25 +67,38 @@
         justify-content: space-between;
     }
 
+    @media (max-width: 768px) {
+        ul {
+            display: block;
+        }
+    }
+
     @media (max-width: 640px) {
         ul {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr;
+            grid-template-columns: 0fr;
         }
 
-        li {
-            padding: 4px 0px;
-            margin: 4px 0px;
-        }
-
-        h1 {
-            max-width: 530px;
-        }
-
+        
         &_cont {
-            max-width: 512px;
-            padding: 6px 0px;
+            img {
+                margin: 0px;
+            }
+                
+                p {
+                    margin: 0px 6px;
+            }
+        }
+    }
+
+    @media (max-width: 375px) {
+        li {
+            padding: 10px 5px;
+        }
+    }
+
+    @media (max-width: 320px) {
+        img {
+            width: 58px;
         }
     }
 }

@@ -24,11 +24,6 @@ body {
     font-style: normal;
 }
 
-.button {
-    font-size: 18px;
-    color: variaveis.$CorSecundaria;
-    text-decoration: none;
-    border: 1px solid variaveis.$CorSecundaria;
-    border-radius: 4px;
-    padding: 8px 14px;
+@media screen and (max-width: 480px) {
+    
 }
