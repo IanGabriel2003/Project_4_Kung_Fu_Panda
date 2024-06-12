@@ -24,7 +24,7 @@
         align-items: center;
         
         &_item {
-            margin: 5px;
+            margin: 0px 5px;
         }
     }
 
@@ -53,32 +53,37 @@
         padding: 8px 14px;
     }
 
-    @media (max-width: 480px) {
-            &_container {
+    @media (max-width: 640px) {
+        &_container {
+            display: block;
+            &_up {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 padding: 0px 0px;
             }
-            
-            &_logo {
-                margin: auto;
-                margin-right: 35%;
-            }
+        }
+        
+        &_logo {
+            margin: auto;
+            margin-right: 35%;
+        }
 
-            &_links {
-                &_item {
-                    margin-left: 33%;
-                }
+        &_links {
+            justify-content: end;
+
+            &_item {
+                margin: 0px 2px;
             }
+        }
 
         #hamburguer {
             display: block;
             margin: auto;
-            margin-left: 70%;
+            margin-left: 90%;
         }
 
         .button {
-            padding: 0px;
+            padding: 2px 1px;
             margin: auto 0px;
         }
     }
