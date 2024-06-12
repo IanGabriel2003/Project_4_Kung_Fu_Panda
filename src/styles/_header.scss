@@ -28,15 +28,6 @@
         }
     }
 
-    .burguer {
-        display: flex;
-    }
-
-    .burguer-toggle {
-        display: none;
-        cursor: pointer;
-    }
-
     #hamburguer {
         display: none;
         color: variaveis.$CorSecundaria;
@@ -51,7 +42,16 @@
         border: 1px solid variaveis.$CorSecundaria;
         border-radius: 4px;
         padding: 8px 14px;
+        transition-duration: 0.5s;
     }
+
+    @media (min-width: 1024px) {
+        .button:hover {
+            background-color: variaveis.$CorSecundaria;
+            color: variaveis.$CorPrincipal;
+        }
+    }
+
 
     @media (max-width: 640px) {
         &_container {
@@ -60,6 +60,7 @@
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 padding: 0px 0px;
+                margin-left: -8%;
             }
         }
         
@@ -84,7 +85,7 @@
         #hamburguer {
             display: block;
             margin: auto;
-            margin-left: 90%;
+            margin-left: 99%;
         }
 
         .button {
