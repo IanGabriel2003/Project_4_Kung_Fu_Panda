@@ -1,5 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     const buttons = document.querySelectorAll('[data-tab-button]');
+    const hamburguer = document.querySelector("#hamburguer");
+    const nav = document.querySelector(".header_links");
+
+    hamburguer.addEventListener("click", () => nav.classList.toggle("active"));
 
     // Seção de atrações, programação das abas
     for (let i = 0; i <buttons.length; i++) {

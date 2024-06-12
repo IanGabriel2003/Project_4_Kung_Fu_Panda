@@ -69,11 +69,16 @@
         }
 
         &_links {
+            display: none;
             justify-content: end;
 
             &_item {
                 margin: 0px 2px;
             }
+        }
+
+        .active {
+            display: flex;
         }
 
         #hamburguer {
